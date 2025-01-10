@@ -1,5 +1,13 @@
 # Robot Swarm Navigation
 
+![Small Swarm](https://github.com/user-attachments/assets/63a3b7fe-d051-4d3a-8b6a-2ade75b043b1)
+
+![Large Swarm](https://github.com/user-attachments/assets/b218b0fa-3b75-49d2-a1ab-2133083e50ca)
+
+![rewardplot](https://github.com/user-attachments/assets/75c26dc9-d279-4c15-bbb4-d1a2d8a9ef20)
+![epstat](https://github.com/user-attachments/assets/249c4f9b-aaec-4c58-8007-2d2605d47a81)
+
+
 ## Software Requirements
 The entire pipeline was tested in Ubuntu 22.04 with ROS2 Humble Hawksbill and Gazebo Classic. The zip file contains all the necessary code to run the pipeline.
 Please note that folders **custom_msgs**, **sim_gazebo**, **turtlebot3_rl** inside the zip are ros2 packages. All others are ordinary directories.
@@ -145,4 +153,10 @@ cd src
 ./run_test_agent_large.sh
 ```
 The run_test_agent will load the pretrained weights from models folder. Once that succeeds, one can visulaize the robot swarm move in the Gazebo Engine.
->>>>>>> 15874cd (New Files to the Repo)
+
+---
+# Ongoing & Future Work
+
+- Train the Swarm with other RL algorithms like PPO, MAPPO, MADDPG.
+- Turn it into an Decentralized Training and Centralized Execution Problem.
+- Code up a Graph-RL scenario for training and execution.
