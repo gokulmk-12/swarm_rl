@@ -1,0 +1,77 @@
+<mujoco>
+  <compiler inertiafromgeom="true" angle="radian" coordinate="local"/>
+  <option timestep="0.01" gravity="0 0 -9.8" iterations="20" integrator="Euler">
+    <flag contact="enable"/>  
+  </option>
+  <default>
+    <joint damping="1" limited="false"/>
+    <geom friction="0.5 0.1 0.1" density="1000" margin="0.002" condim="1" contype="1" conaffinity="1"/>
+  </default>
+  <asset>
+    <texture type="2d" name="groundplane" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" width="100" height="100"/>
+    <texture name="skybox" type="skybox" builtin="gradient" rgb1=".4 .6 .8" rgb2="0 0 0" width="800" height="800" mark="random" markrgb="1 1 1"/>
+    <material name="groundplane" texture="groundplane" texrepeat="20 20"/>
+    <material name="wall_material" rgba="0.7 0.5 0.3 1.0"/> <!-- Black-colored walls -->
+    <material name="goal_material" rgba="0.0 1.0 0.0 1.0"/> <!-- Green for goals -->
+    <material name="obstacle_material" rgba="0.7 0.5 0.3 1.0"/> <!-- Gray for obstacles -->
+  </asset>
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1"/>
+    <map znear="0.01"/>
+    <quality shadowsize="2048"/>
+  </visual>
+  <worldbody>
+
+    <geom name="ground" type="plane" size="40 40 0.25" pos="0 0 -0.1" material="groundplane"/>
+
+    <geom name="wall_top" type="box" size="4.25 0.25 0.5" pos="0.0 4.0 0.25" material="wall_material" contype="1" conaffinity="1"/>
+    <geom name="wall_bottom" type="box" size="4.25 0.25 0.5" pos="0 -4.0 0.25" material="wall_material" contype="1" conaffinity="1"/>
+    <geom name="wall_left" type="box" size="0.25 4.25 0.5" pos="-4.0 0 0.25" material="wall_material" contype="1" conaffinity="1"/>
+    <geom name="wall_right" type="box" size="0.25 4.25 0.5" pos="4.0 0 0.25" material="wall_material" contype="1" conaffinity="1"/>
+
+    <geom name="obstacle1" type="box" size="0.5 0.7 0.25" pos="-1.0 0.5 0.1" material="obstacle_material" contype="1" conaffinity="1"/>
+    <geom name="obstacle2" type="box" size="0.6 0.9 0.25" pos="0.0 -2.0 0.1" material="obstacle_material" contype="1" conaffinity="1"/>
+    <geom name="obstacle3" type="box" size="0.5 0.7 0.25" pos="1.5 1.5 0.1" material="obstacle_material" contype="1" conaffinity="1"/>
+ 
+
+    <body name="goal_1" pos="-2.5 -1.5 0">
+      <geom name="g1" type="sphere" size="0.2" rgba="0.0 0.0 1.0 0.1" contype="0" conaffinity="0"/>
+    </body>
+
+    <body name="goal_2" pos="-2.5 1.0 0">
+      <geom name="g2" type="sphere" size="0.2" rgba="1.0 0.0 0.0 0.1" contype="0" conaffinity="0"/>
+    </body>
+
+    <body name="goal_3" pos="2.0 -2.0 0">
+      <geom name="g3" type="sphere" size="0.2" rgba="0.0 1.0 0.0 0.1" contype="0" conaffinity="0"/>
+    </body>
+
+    <body name="agent_1" pos="2.5 -0.5 0">
+      <geom name="s1" type="sphere" size="0.2" rgba="0.0 0.0 1.0 2.0" contype="1" conaffinity="1"/>
+      <joint name="agent1_x" type="slide" pos="0 0 0" axis="1 0 0"/>
+      <joint name="agent1_y" type="slide" pos="0 0 0" axis="0 1 0"/>
+    </body>
+
+    <body name="agent_2" pos="2.5 2.5 0">
+      <geom name="s2" type="sphere" size="0.2" rgba="1.0 0.0 0.0 2.0" contype="1" conaffinity="1"/>
+      <joint name="agent2_x" type="slide" pos="0 0 0" axis="1 0 0"/>
+      <joint name="agent2_y" type="slide" pos="0 0 0" axis="0 1 0"/>
+    </body>
+
+    <body name="agent_3" pos="-2.5 2.0 0">
+      <geom name="s3" type="sphere" size="0.2" rgba="0.0 1.0 0.0 2.0" contype="1" conaffinity="1"/>
+      <joint name="agent3_x" type="slide" pos="0 0 0" axis="1 0 0"/>
+      <joint name="agent3_y" type="slide" pos="0 0 0" axis="0 1 0"/>
+    </body>
+
+  </worldbody>
+
+  <actuator>
+    <motor name="motor1_x" joint="agent1_x" ctrlrange="-1.0 1.0" ctrllimited="true" gear="100"/>
+    <motor name="motor1_y" joint="agent1_y" ctrlrange="-1.0 1.0" ctrllimited="true" gear="100"/>
+    <motor name="motor2_x" joint="agent2_x" ctrlrange="-1.0 1.0" ctrllimited="true" gear="100"/>
+    <motor name="motor2_y" joint="agent2_y" ctrlrange="-1.0 1.0" ctrllimited="true" gear="100"/>
+    <motor name="motor3_x" joint="agent3_x" ctrlrange="-1.0 1.0" ctrllimited="true" gear="100"/>
+    <motor name="motor3_y" joint="agent3_y" ctrlrange="-1.0 1.0" ctrllimited="true" gear="100"/>
+  </actuator>
+</mujoco>

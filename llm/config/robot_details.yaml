@@ -1,0 +1,48 @@
+robot1:
+  - name: robot1_1
+    x: 0.5
+    y: 2.5
+    z: 0.01
+  - name: robot1_2
+    x: 8.5
+    y: 8.5
+    z: 0.01
+  - name: robot1_3
+    x: 6.0
+    y: 4.0
+    z: 0.01
+  - name: robot1_4
+    x: 8.3
+    y: 4
+    z: 0.01
+robot2:
+  - name: robot2_1
+    x: 8.5
+    y: 1.5
+    z: 0.01
+  - name: robot2_2
+    x: 0.5
+    y: 8.0
+    z: 0.01
+  - name: robot2_3
+    x: 6.0
+    y: 5.0
+    z: 0.01
+target:
+  - name: charging_1
+    x: 0.2
+    y: 5.12
+    z: 0.01
+  - name: charging_2
+    x: 5.6
+    y: 0.32
+    z: 0.01
+  - name: vending
+    x: 1.56
+    y: 0.454
+    z: 0.01
+  - name: servicebot
+    x: 4.57
+    y: 9.3
+    z: 0.01
+    

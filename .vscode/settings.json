@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/gokul/ROS2/Inter_IIT/install/turtlebot3_rl/lib/python3.10/site-packages",
+        "/home/gokul/ROS2/Inter_IIT/install/custom_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/gokul/ROS2/Inter_IIT/install/turtlebot3_rl/lib/python3.10/site-packages",
+        "/home/gokul/ROS2/Inter_IIT/install/custom_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

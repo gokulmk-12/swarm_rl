@@ -1,0 +1,16 @@
+scikit-learn
+torch
+pygame
+PyYAML
+numpy
+jsonschema
+streamlit
+requests
+fastapi
+pydantic
+uvicorn
+python-dotenv
+langchain-core
+groq
+instructor
+scipy

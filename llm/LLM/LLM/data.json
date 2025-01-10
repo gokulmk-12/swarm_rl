@@ -1,0 +1,91 @@
+{
+    "robot": [
+        {
+            "robot_id": "robot_1",
+            "position": [
+                0.5,
+                2.0
+            ],
+            "idle": false,
+            "assigned_object_coords": [
+                1.56,
+                0.454
+            ],
+            "status": "unknown"
+        },
+        {
+            "robot_id": "robot_2",
+            "position": [
+                8.5,
+                8.5
+            ],
+            "idle": true,
+            "assigned_object_coords": [],
+            "status": "NA"
+        },
+        {
+            "robot_id": "robot_3",
+            "position": [
+                0.6,
+                8.0
+            ],
+            "idle": false,
+            "assigned_object_coords": [
+                0.2,
+                5.12
+            ],
+            "status": "unknown"
+        },
+        {
+            "robot_id": "robot_4",
+            "position": [
+                7.8,
+                1.0
+            ],
+            "idle": false,
+            "assigned_object_coords": [
+                5.6,
+                0.32
+            ],
+            "status": "unknown"
+        }
+    ],
+    "target": [
+        {
+            "object_id": "Target_1",
+            "coords": [
+                0.2,
+                5.12
+            ],
+            "type": "charging",
+            "is_assigned": true
+        },
+        {
+            "object_id": "Target_2",
+            "coords": [
+                5.6,
+                0.32
+            ],
+            "type": "charging",
+            "is_assigned": true
+        },
+        {
+            "object_id": "Target_3",
+            "coords": [
+                1.56,
+                0.454
+            ],
+            "type": "vending",
+            "is_assigned": true
+        },
+        {
+            "object_id": "Target_4",
+            "coords": [
+                4.57,
+                9.3
+            ],
+            "type": "servicebot",
+            "is_assigned": false
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "robot": [
+        {
+            "robot_id": "robot_1",
+            "position": [
+                0.5,
+                2.0
+            ],
+            "idle": false,
+            "assigned_object_coords": [
+                5.2,
+                8.7
+            ],
+            "status": "success"
+        },
+        {
+            "robot_id": "robot_2",
+            "position": [
+                8.5,
+                8.5
+            ],
+            "idle": false,
+            "assigned_object_coords": [
+                7.0,
+                0.8
+            ],
+            "status": "success"
+        },
+        {
+            "robot_id": "robot_3",
+            "position": [
+                0.6,
+                8.0
+            ],
+            "idle": false,
+            "assigned_object_coords": [
+                1.5,
+                1.25
+            ],
+            "status": "success"
+        },
+        {
+            "robot_id": "robot_4",
+            "position": [
+                3.5,
+                3.35
+            ],
+            "idle": false,
+            "assigned_object_coords": [
+                0.9,
+                5.95
+            ],
+            "status": "success"
+        }
+    ],
+    "target": [
+        {
+            "object_id": "charging_1",
+            "coords": [
+                0.9,
+                5.95
+            ],
+            "type": "charging_station",
+            "is_assigned": true
+        },
+        {
+            "object_id": "charging_2",
+            "coords": [
+                7.0,
+                0.8
+            ],
+            "type": "charging_station",
+            "is_assigned": true
+        },
+        {
+            "object_id": "vending_1",
+            "coords": [
+                1.5,
+                1.25
+            ],
+            "type": "vending_machine",
+            "is_assigned": true
+        },
+        {
+            "object_id": "service_1",
+            "coords": [
+                5.2,
+                8.7
+            ],
+            "type": "servicebot",
+            "is_assigned": true
+        }
+    ]
+}

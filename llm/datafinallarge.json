@@ -1,0 +1,116 @@
+{
+    "robot": [
+        {
+            "robot_id": "robot_1",
+            "position": [
+                -0.6,
+                -5.0
+            ],
+            "idle": true,
+            "assigned_object_coords": [
+                -4.45,
+                -2.04
+            ],
+            "status": "success"
+        },
+        {
+            "robot_id": "robot_2",
+            "position": [
+                9.5,
+                4.0
+            ],
+            "idle": true,
+            "assigned_object_coords": [
+                9.85,
+                7.1
+            ],
+            "status": "success"
+        },
+        {
+            "robot_id": "robot_3",
+            "position": [
+                -1.6,
+                8.6
+            ],
+            "idle": true,
+            "assigned_object_coords": [
+                -4.15,
+                8.86
+            ],
+            "status": "success"
+        },
+        {
+            "robot_id": "robot_4",
+            "position": [
+                9.5,
+                -1.7
+            ],
+            "idle": true,
+            "assigned_object_coords": [
+                9.7,
+                1.3
+            ],
+            "status": "success"
+        },
+        {
+            "robot_id": "robot_5",
+            "position": [
+                0.0,
+                4.0
+            ],
+            "idle": true,
+            "assigned_object_coords": [
+                -4.0,
+                -4.82
+            ],
+            "status": "success"
+        }
+    ],
+    "target": [
+        {
+            "object_id": "charging_1",
+            "coords": [
+                -4.45,
+                -2.04
+            ],
+            "type": "charging_station",
+            "is_assigned": false
+        },
+        {
+            "object_id": "charging_2",
+            "coords": [
+                9.7,
+                1.3
+            ],
+            "type": "charging_station",
+            "is_assigned": false
+        },
+        {
+            "object_id": "vending_1",
+            "coords": [
+                -4.0,
+                -4.82
+            ],
+            "type": "vending_machine",
+            "is_assigned": false
+        },
+        {
+            "object_id": "service_1",
+            "coords": [
+                9.85,
+                7.1
+            ],
+            "type": "servicebot",
+            "is_assigned": false
+        },
+        {
+            "object_id": "fire_1",
+            "coords": [
+                -4.15,
+                8.86
+            ],
+            "type": "fireextinguisher",
+            "is_assigned": false
+        }
+    ]
+}
