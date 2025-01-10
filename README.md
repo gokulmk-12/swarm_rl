@@ -9,7 +9,7 @@ We have used Groq AI Inference Engine. So the LLM requires the API key from Groq
 > tool_caller.py in llm/LLM/LLM, line 18 and 35. Put your API Key as a string in Groq(api_key=<your_API_key>)
 
 ## Gazebo Models
-There is a gazebo_models.zip file. This contains the models and obstacles in gazebo. Please extract them to .gazebo/models (hidden folder) in your home directory.
+There is a [gazebo_models.zip](https://drive.google.com/file/d/1RDvVamywxUlJ13DGDlOhOFfkxlMmjLl0/view?usp=sharing) file. This contains the models and obstacles in gazebo. Please extract them to .gazebo/models (hidden folder) in your home directory.
 
 ## Usage Instructions
 A few videos are in the Videos folder which can help one understand how to run the pipeline. However, the steps have been mentioned in detail below.
